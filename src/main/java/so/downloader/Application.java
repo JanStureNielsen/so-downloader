@@ -21,7 +21,10 @@ public class Application {
         String targetFilename = args[1];
 
         long bytesDownloaded = download(sourceUrl, targetFilename);
-        System.out.println(String.format("Downloaded %d bytes from %s to %s.", bytesDownloaded, sourceUrl, targetFilename));
+
+        String message = String.format("Downloaded %d bytes from %s to %s.", bytesDownloaded, sourceUrl, targetFilename);
+
+        System.out.println(message);
     }
 
     // package scope to allow test class to access
